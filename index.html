@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Adivinhação</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+      <h1>Jogo da Adivinhação</h1>
+      <h3>Escolha o gênero: 
+        <hr>
+        <input type="radio" name="genero" value="frutas" checked> Frutas
+        <hr>
+        <input type="radio" name="genero" value="animais"> Animais
+        <hr>
+      </h3>
+      <p id="mensagem">Clique no botão "Sortear" para começar.</p>
+      <p id="descricao-genero"></p>
+      <hr>
+      <p>Adivinhe a palavra que começa com a letra
+          <span id="letra">??</span>
+          e possui <span id="tamanho">??</span> letras.
+          <input type="text" id="palpite" maxlength="5">
+      </p>
+      <h2>Palavra Sorteada:
+        <span id="palavrassorteadas">**********</span>
+      </h2>
+      <h2>Resultado: <span id="resultado"></span></h2>
+      <button id="sortearButton">Sortear</button>
+      <button id="confirmarButton">Confirmar</button>
+      <script src="script.js"></script>
+  </div>
+</body>
+</html>
